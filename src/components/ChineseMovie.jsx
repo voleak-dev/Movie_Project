@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'; // ១. Import Link ពី react-router
 const ChineseMovie = () => {
   const cMovies = [
     {
-      id: 1,
+      id: 19,
       title: "រឿង ទេពបុត្រដាវទិព្វ",
       rating: "8.5",
       image: "https://i.mydramalist.com/PxmBER_4f.jpg",
@@ -12,7 +12,7 @@ const ChineseMovie = () => {
       category: "វាយប្រហារ"
     },
     {
-      id: 2,
+      id: 20,
       title: "អាថ៌កំបាំងក្រុងហាមឃាត់",
       rating: "9.0",
       image: "https://i.mydramalist.com/PxmBER_4f.jpg",
@@ -20,7 +20,7 @@ const ChineseMovie = () => {
       category: "ប្រវត្តិសាស្ត្រ"
     },
     {
-      id: 3,
+      id: 21,
       title: "យុទ្ធសាស្ត្រស៊ុនអ៊ូខុង",
       rating: "7.8",
       image: "https://i.mydramalist.com/PxmBER_4f.jpg",
@@ -28,7 +28,7 @@ const ChineseMovie = () => {
       category: "ទេវកថា"
     },
     {
-      id: 4,
+      id: 22,
       title: "កំពូលអ្នកប្រដាល់ចិន",
       rating: "8.2",
       image: "https://i.mydramalist.com/PxmBER_4f.jpg",
@@ -36,7 +36,7 @@ const ChineseMovie = () => {
       category: "ក្បាច់គុន"
     },
     {
-      id: 5,
+      id: 23,
       title: "សង្គ្រាមបីទ័ព",
       rating: "9.4",
       image: "https://i.mydramalist.com/PxmBER_4f.jpg",

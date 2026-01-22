@@ -154,41 +154,107 @@ const DetailMovie = () => {
         image: "https://books.scholarlibrary.com/web/image/product.template/18102/image_1024?unique=4397a7c"
       },
       // Korean Movies (IDs 14-18)
-      14: {
-        title: "Squid Game",
-        titleEn: "Squid Game",
-        rating: "8.8",
+      // Korean Movies (IDs 14-18)
+    14: {
+      title: "រឿង បេសកកម្មសម្ងាត់",
+      titleEn: "Secret Mission",
+      rating: "8.9",
+      duration: "២ ម៉ោង ០៥ នាទី",
+      year: "២០២៤",
+      category: "វាយប្រហារ / សកម្មភាព",
+      description: "រឿងរ៉ាវរបស់អ្នកស៊ើបការណ៍សម្ងាត់ដែលត្រូវជ្រៀតចូលក្នុងក្រុមក្មេងទំនើង ដើម្បីបង្ក្រាបអំពើពុករលួយដ៏ធំមួយនៅក្នុងទីក្រុងសេអ៊ូល។",
+      cast: "Hyun Bin, Yoo Hae-jin",
+      image: "https://khdiamond.net/wp-content/uploads/2024/07/POSTER-scaled.jpg"
+        },
+        15: {
+        title: "ស្នេហ៍ក្នុងសុបិន",
+        titleEn: "Dream Love",
+        rating: "9.2",
+        duration: "១ ម៉ោង ៤៥ នាទី",
+        year: "២០២៤",
+        category: "មនោសញ្ចេតនា",
+        description: "រឿងរ៉ាវស្នេហាដ៏ផ្អែមល្ហែមរវាងយុវជនពីរនាក់ដែលបានជួបគ្នាតាមរយៈការយល់សប្តិ និងព្យាយាមស្វែងរកគ្នានៅក្នុងជីវិតពិត។",
+        cast: "Park Bo-gum, Suzy",
+        image: "https://i0.wp.com/blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqPt6wkaPN23C3gEpJbmje6O2cMYXR4q9Cpvl_loBQ4Flrl5UinOkV-Fv8jw3rrRM6pHlQ3V5OdSEyCupzEbcJbm-RFqf_Ta9udkhMjAyEThEK6f7ATjQOltKkeRsz8ZnAxy9JZMQir5KSHWHy0UbiDI3yBlJHeUDdEm1eE51pySo7bmgMmqknelmC3NBD/s1600/Krom%20Brotebatka%20Songkrous%20Chivit.jpg"
+      },
+      16: {
+        title: "វិញ្ញាណមិនស្លាប់",
+        titleEn: "Immortal Spirit",
+        rating: "8.5",
         duration: "២ ម៉ោង ១០ នាទី",
         year: "២០២៣",
-        category: "រន្ធត់ / សកម្មភាព",
-        description: "ក្រុមមនុស្សដែលមានបំណុលច្រើនត្រូវបានអញ្ជើញឱ្យចូលរួមក្នុងហ្គេមដែលអាចឈ្នះរង្វាន់យកប្រាក់ច្រើន ប៉ុន្តែបើចាញ់ត្រូវស្លាប់។",
-        cast: "Lee Jung-jae, Park Hae-soo, Wi Ha-joon",
-        image: "https://m.media-amazon.com/images/M/MV5BYWE3MDVkN2EtNjQ5MS00ZDQ4LTliNzYtMjc2YWMzMDEwMTA3XkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_FMjpg_UX1000_.jpg"
+        category: "រន្ធត់ / អាថ៌កំបាំង",
+        description: "វិញ្ញាណបុរាណមួយដែលតាមថែរក្សាគ្រួសារមួយអស់រយៈពេលរាប់រយឆ្នាំ ប៉ុន្តែត្រូវប្រឈមមុខនឹងគ្រូមន្តអាគមខ្មៅងងឹត។",
+        cast: "Gong Yoo, Kim Go-eun",
+        image: "https://i0.wp.com/blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqPt6wkaPN23C3gEpJbmje6O2cMYXR4q9Cpvl_loBQ4Flrl5UinOkV-Fv8jw3rrRM6pHlQ3V5OdSEyCupzEbcJbm-RFqf_Ta9udkhMjAyEThEK6f7ATjQOltKkeRsz8ZnAxy9JZMQir5KSHWHy0UbiDI3yBlJHeUDdEm1eE51pySo7bmgMmqknelmC3NBD/s1600/Krom%20Brotebatka%20Songkrous%20Chivit.jpg"
       },
-      15: {
-        title: "Parasite",
-        titleEn: "Parasite",
-        rating: "8.6",
-        duration: "២ ម៉ោង ១២ នាទី",
-        year: "២០១៩",
-        category: "មនោសញ្ចេតនា / រន្ធត់",
-        description: "គ្រួសារក្រីក្រត្រៀមខ្លួនជាអ្នកបម្រើសម្រាប់គ្រួសារមានប្រាក់ជាង ប៉ុន្តែយ៉ាងណាក៏ដោយពួកគេនាំគ្នាចូលទៅក្នុងភាពវឹកវរមួយ។",
-        cast: "Song Kang-ho, Lee Sun-kyun, Cho Yeo-jeong",
-        image: "https://m.media-amazon.com/images/M/MV5BYWZjMjk3ZTItODQ2ZC00NTY5LWE0ZDYtZTI3MjcwN2Q5NTVkXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_FMjpg_UX1000_.jpg"
-      }
-    };
-    
-    return movies[movieId] || {
-      title: "រឿងមិនត្រូវបានរកឃើញ",
-      titleEn: "Movie Not Found",
-      rating: "0.0",
-      duration: "០ ម៉ោង ០០ នាទី",
+      17: {
+        title: "អ្នកស៊ើបអង្កេតវ័យក្មេង",
+        titleEn: "Young Detective",
+        rating: "7.8",
+        duration: "១ ម៉ោង ៥៥ នាទី",
+        year: "២០២៤",
+        category: "ស៊ើបអង្កេត / កំប្លែង",
+        description: "និស្សិតសាលាប៉ូលីសពីរនាក់បានឃើញការចាប់ជំរិតមួយ និងបានសម្រេចចិត្តបើកការស៊ើបអង្កេតដោយខ្លួនឯង។",
+        cast: "Park Seo-joon, Kang Ha-neul",
+        image: "https://i0.wp.com/blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqPt6wkaPN23C3gEpJbmje6O2cMYXR4q9Cpvl_loBQ4Flrl5UinOkV-Fv8jw3rrRM6pHlQ3V5OdSEyCupzEbcJbm-RFqf_Ta9udkhMjAyEThEK6f7ATjQOltKkeRsz8ZnAxy9JZMQir5KSHWHy0UbiDI3yBlJHeUDdEm1eE51pySo7bmgMmqknelmC3NBD/s1600/Krom%20Brotebatka%20Songkrous%20Chivit.jpg"
+      },
+      18: {
+        title: "មហិច្ឆតាអំណាច",
+        titleEn: "Ambition of Power",
+        rating: "8.7",
+        duration: "២ ម៉ោង ០៥ នាទី",
+        year: "២០២៤",
+        category: "នយោបាយ / រឿងពិត",
+        description: "ការតស៊ូដណ្តើមអំណាចនៅក្នុងស្ថាប័នរដ្ឋដ៏ធំមួយ ដែលបង្ហាញពីការប្រើល្បិចកល និងការក្បត់ដើម្បីឡើងទៅកាន់តំណែងខ្ពស់បំផុត។",
+        cast: "Lee Jung-jae, Jung Woo-sung",
+        image: "https://i0.wp.com/blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqPt6wkaPN23C3gEpJbmje6O2cMYXR4q9Cpvl_loBQ4Flrl5UinOkV-Fv8jw3rrRM6pHlQ3V5OdSEyCupzEbcJbm-RFqf_Ta9udkhMjAyEThEK6f7ATjQOltKkeRsz8ZnAxy9JZMQir5KSHWHy0UbiDI3yBlJHeUDdEm1eE51pySo7bmgMmqknelmC3NBD/s1600/Krom%20Brotebatka%20Songkrous%20Chivit.jpg"
+      },
+
+        19: {
+      title: "រឿង ទេពបុត្រដាវទិព្វ",
+      titleEn: "The Sword Deity",
+      rating: "8.5",
+      duration: "២ ម៉ោង ១៥ នាទី",
       year: "២០២៤",
-      category: "មិនស្គាល់",
-      description: "រឿងនេះមិនមាននៅក្នុងប្រព័ន្ធទេ។",
-      cast: "មិនស្គាល់",
-      image: "https://via.placeholder.com/400x600/333333/FFFFFF?text=Movie+Not+Found"
-    };
+      category: "វាយប្រហារ / បុរាណ",
+      description: "រឿងរ៉ាវរបស់យុវជនម្នាក់ដែលទទួលបានដាវទិព្វពីបុព្វបុរស និងត្រូវការពារពិភពគុនពីការលុកលុយរបស់បិសាច។",
+      cast: "Xiao Zhan, Wang Yibo",
+      image: "https://i.mydramalist.com/PxmBER_4f.jpg"
+    },
+    20: {
+      title: "អាថ៌កំបាំងក្រុងហាមឃាត់",
+      titleEn: "Hidden City Secrets",
+      rating: "9.0",
+      duration: "២ ម៉ោង ៤៥ នាទី",
+      year: "២០២៤",
+      category: "ប្រវត្តិសាស្ត្រ / ស៊ើបអង្កេត",
+      description: "ការស៊ើបអង្កេតអំពីករណីឃាតកម្មអាថ៌កំបាំងនៅក្នុងរាជវាំងដែលពាក់ព័ន្ធនឹងមន្ត្រីជាន់ខ្ពស់ជាច្រើន។",
+      cast: "Chen Kun, Ni Ni",
+      image: "https://i.mydramalist.com/PxmBER_4f.jpg"
+      },
+      21: {
+      title: "យុទ្ធសាស្ត្រស៊ុនអ៊ូខុង",
+      titleEn: "The Great Wall",
+      rating: "7.8",
+      duration: "២ ម៉ោង ១១ នាទី",
+      year: "២០១៩",
+      category: "ទេវកថា / ប្រវត្តិសាស្ត្រ",
+      },
+      
+  };
+      
+      return movies[movieId] || {
+        title: "រឿងមិនត្រូវបានរកឃើញ",
+        titleEn: "Movie Not Found",
+        rating: "0.0",
+        duration: "០ ម៉ោង ០០ នាទី",
+        year: "២០២៤",
+        category: "មិនស្គាល់",
+        description: "រឿងនេះមិនមាននៅក្នុងប្រព័ន្ធទេ។",
+        cast: "មិនស្គាល់",
+        image: "https://via.placeholder.com/400x600/333333/FFFFFF?text=Movie+Not+Found"
+      };
   };
 
   const movie = getMovieById(parseInt(id));

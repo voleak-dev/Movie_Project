@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'; // ១. Import Link
 const KoreanMovie = () => {
   const kMovies = [
     {
-      id: 1,
+      id: 14,
       title: "រឿង បេសកកម្មសម្ងាត់",
       rating: "8.9",
       image: "https://khdiamond.net/wp-content/uploads/2024/07/POSTER-scaled.jpg",
@@ -12,7 +12,7 @@ const KoreanMovie = () => {
       category: "វាយប្រហារ"
     },
     {
-      id: 2,
+      id: 15,
       title: "ស្នេហ៍ក្នុងសុបិន",
       rating: "9.2",
       image: "https://i0.wp.com/blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqPt6wkaPN23C3gEpJbmje6O2cMYXR4q9Cpvl_loBQ4Flrl5UinOkV-Fv8jw3rrRM6pHlQ3V5OdSEyCupzEbcJbm-RFqf_Ta9udkhMjAyEThEK6f7ATjQOltKkeRsz8ZnAxy9JZMQir5KSHWHy0UbiDI3yBlJHeUDdEm1eE51pySo7bmgMmqknelmC3NBD/s1600/Krom%20Brotebatka%20Songkrous%20Chivit.jpg?w=348&resize=348,215&ssl=1",
@@ -20,7 +20,7 @@ const KoreanMovie = () => {
       category: "មនោសញ្ចេតនា"
     },
     {
-      id: 3,
+      id: 16,
       title: "វិញ្ញាណមិនស្លាប់",
       rating: "8.5",
       image: "https://i0.wp.com/blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqPt6wkaPN23C3gEpJbmje6O2cMYXR4q9Cpvl_loBQ4Flrl5UinOkV-Fv8jw3rrRM6pHlQ3V5OdSEyCupzEbcJbm-RFqf_Ta9udkhMjAyEThEK6f7ATjQOltKkeRsz8ZnAxy9JZMQir5KSHWHy0UbiDI3yBlJHeUDdEm1eE51pySo7bmgMmqknelmC3NBD/s1600/Krom%20Brotebatka%20Songkrous%20Chivit.jpg?w=348&resize=348,215&ssl=1",
@@ -28,7 +28,7 @@ const KoreanMovie = () => {
       category: "រន្ធត់"
     },
     {
-      id: 4,
+      id: 17,
       title: "អ្នកស៊ើបអង្កេតវ័យក្មេង",
       rating: "7.8",
       image: "https://i0.wp.com/blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqPt6wkaPN23C3gEpJbmje6O2cMYXR4q9Cpvl_loBQ4Flrl5UinOkV-Fv8jw3rrRM6pHlQ3V5OdSEyCupzEbcJbm-RFqf_Ta9udkhMjAyEThEK6f7ATjQOltKkeRsz8ZnAxy9JZMQir5KSHWHy0UbiDI3yBlJHeUDdEm1eE51pySo7bmgMmqknelmC3NBD/s1600/Krom%20Brotebatka%20Songkrous%20Chivit.jpg?w=348&resize=348,215&ssl=1",
@@ -36,7 +36,7 @@ const KoreanMovie = () => {
       category: "ស៊ើបអង្កេត"
     },
     {
-      id: 5,
+      id: 18,
       title: "មហិច្ឆតាអំណាច",
       rating: "8.7",
       image: "https://i0.wp.com/blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqPt6wkaPN23C3gEpJbmje6O2cMYXR4q9Cpvl_loBQ4Flrl5UinOkV-Fv8jw3rrRM6pHlQ3V5OdSEyCupzEbcJbm-RFqf_Ta9udkhMjAyEThEK6f7ATjQOltKkeRsz8ZnAxy9JZMQir5KSHWHy0UbiDI3yBlJHeUDdEm1eE51pySo7bmgMmqknelmC3NBD/s1600/Krom%20Brotebatka%20Songkrous%20Chivit.jpg?w=348&resize=348,215&ssl=1",
