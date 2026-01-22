@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { 
-  FaCamera, FaEdit, FaShareAlt, FaUser, FaCog, 
+  FaCamera, FaEdit,  FaUser, FaCog, 
   FaHistory, FaTrophy, FaGem, FaMask, FaBolt 
 } from 'react-icons/fa';
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // ១. Import Link
 
 const Footer = () => {
   return (
@@ -17,42 +18,42 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* ផ្នែកទី២: តំណភ្ជាប់រហ័ស */}
+          {/* ផ្នែកទី២: តំណភ្ជាប់រហ័ស - ប្តូរ <a> ទៅ <Link> */}
           <div>
             <h4 className="text-white font-bold mb-4 border-l-4 border-red-600 pl-3">តំណភ្ជាប់រហ័ស</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="/" className="hover:text-red-500 transition-colors">ទំព័រដើម</a></li>
-              <li><a href="#" className="hover:text-red-500 transition-colors">ភាពយន្តចេញថ្មី</a></li>
-              <li><a href="#" className="hover:text-red-500 transition-colors">ភាពយន្តភាគកូរ៉េ</a></li>
-              <li><a href="#" className="hover:text-red-500 transition-colors">កម្មវិធីទូរស័ព្ទ</a></li>
+              <li><Link to="/" className="hover:text-red-500 transition-colors">ទំព័រដើម</Link></li>
+              <li><Link to="/new-movies" className="hover:text-red-500 transition-colors">ភាពយន្តចេញថ្មី</Link></li>
+              <li><Link to="/korean-series" className="hover:text-red-500 transition-colors">ភាពយន្តភាគកូរ៉េ</Link></li>
+              <li><Link to="/apps" className="hover:text-red-500 transition-colors">កម្មវិធីទូរស័ព្ទ</Link></li>
             </ul>
           </div>
 
-          {/* ផ្នែកទី៣: ជំនួយ និងសុវត្ថិភាព */}
+          {/* ផ្នែកទី៣: ជំនួយ និងសុវត្ថិភាព - ប្តូរ <a> ទៅ <Link> */}
           <div>
             <h4 className="text-white font-bold mb-4 border-l-4 border-red-600 pl-3">ជំនួយ</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-red-500 transition-colors">សំណួរដែលសួរញឹកញាប់</a></li>
-              <li><a href="#" className="hover:text-red-500 transition-colors">ទំនាក់ទំនងយើង</a></li>
-              <li><a href="#" className="hover:text-red-500 transition-colors">លក្ខខណ្ឌប្រើប្រាស់</a></li>
-              <li><a href="#" className="hover:text-red-500 transition-colors">គោលការណ៍ឯកជនភាព</a></li>
+              <li><Link to="/faq" className="hover:text-red-500 transition-colors">សំណួរដែលសួរញឹកញាប់</Link></li>
+              <li><Link to="/contact" className="hover:text-red-500 transition-colors">ទំនាក់ទំនងយើង</Link></li>
+              <li><Link to="/terms" className="hover:text-red-500 transition-colors">លក្ខខណ្ឌប្រើប្រាស់</Link></li>
+              <li><Link to="/privacy" className="hover:text-red-500 transition-colors">គោលការណ៍ឯកជនភាព</Link></li>
             </ul>
           </div>
 
-          {/* ផ្នែកទី៤: បណ្តាញសង្គម */}
+          {/* ផ្នែកទី៤: បណ្តាញសង្គម - ប្រើ <a> ជាមួយ Link ពិត ឬ use target="_blank" */}
           <div>
             <h4 className="text-white font-bold mb-4 border-l-4 border-red-600 pl-3">តាមដានយើង</h4>
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-gray-900 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all">
+              <a href="https://facebook.com" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-gray-900 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all">
                 <i className="fab fa-facebook-f"></i>
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-gray-900 flex items-center justify-center hover:bg-pink-600 hover:text-white transition-all">
+              <a href="https://instagram.com" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-gray-900 flex items-center justify-center hover:bg-pink-600 hover:text-white transition-all">
                 <i className="fab fa-instagram"></i>
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-gray-900 flex items-center justify-center hover:bg-red-600 hover:text-white transition-all">
+              <a href="https://youtube.com" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-gray-900 flex items-center justify-center hover:bg-red-600 hover:text-white transition-all">
                 <i className="fab fa-youtube"></i>
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-gray-900 flex items-center justify-center hover:bg-blue-400 hover:text-white transition-all">
+              <a href="https://t.me/yourchannel" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-gray-900 flex items-center justify-center hover:bg-blue-400 hover:text-white transition-all">
                 <i className="fab fa-telegram-plane"></i>
               </a>
             </div>
