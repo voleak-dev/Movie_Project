@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import DetailMovie from './components/DetailMovie'; // នាំចូលទំព័រលម្អិត
+import HomePage from './pages/HomePage';
+import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
+import MoviePage from './pages/MoviePage';
+import TvShow from './pages/TvShow';
+import PopularPage from './pages/PopularPage';
+import ProfilePage from './pages/ProfilePage';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <ScrollToTop />
+      <div className="bg-gray-950 min-h-screen">
+        <Navbar />
+        
+        <Routes>
+          {/* ទំព័រដើម (Home Page) */}
+          <Route path="/" element={<HomePage/> } />
+
+          {/* ទំព័រលម្អិត (Detail Page) */}
+          <Route path="/movie/:id" element={<DetailMovie />} />
+          <Route path="/movies" element={<MoviePage />} />
+          <Route path="/tvshows" element={<TvShow />} />
+           <Route path="/popular" element={<PopularPage />} />
+           <Route path="/profile" element={<ProfilePage />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
