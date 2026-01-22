@@ -39,7 +39,7 @@ const Navbar = () => {
                   <Link 
                     key={link.name}
                     to={link.path} 
-                    className="text-gray-300 hover:text-red-500 transition-colors duration-300 text-lg font-medium"
+                    className="text-gray-300 hover:text-red-500 transition-colors duration-300 text-2xl font-medium"
                   >
                     {link.name}
                   </Link>
