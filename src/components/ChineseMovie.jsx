@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // ១. Import Link ពី react-router-dom
 
 const ChineseMovie = () => {
   const cMovies = [
@@ -48,22 +49,23 @@ const ChineseMovie = () => {
     <section className="bg-gray-950 py-16 font-khmer">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* ចំណងជើងផ្នែក - ប្រើពណ៌ទឹកក្រូចតំណាងឱ្យភាពយន្តចិន */}
+        {/* ចំណងជើងផ្នែក */}
         <div className="flex items-center justify-between mb-10">
           <div className="flex items-center space-x-3">
             <h2 className="text-2xl md:text-3xl font-bold text-white border-l-4 border-orange-500 pl-4 uppercase tracking-wider">
               ភាពយន្តចិនល្បីៗ
             </h2>
           </div>
-          <a href="#" className="text-orange-500 hover:text-orange-400 text-sm font-medium transition-colors">
+          {/* ២. ប្តូរពី <a> មកប្រើ <Link> និងដាក់ path ទៅកាន់ទំព័ររឿងចិន (ឧទាហរណ៍ /chinese-movies) */}
+          <Link to="/chinese-movies" className="text-orange-500 hover:text-orange-400 text-sm font-medium transition-colors">
             មើលទាំងអស់ &rarr;
-          </a>
+          </Link>
         </div>
 
-        {/* ប្លង់ Grid - ដូច AllMovie និង KhmerMovie */}
+        {/* ប្លង់ Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-5 gap-y-10">
           {cMovies.map((movie) => (
-            <div key={movie.id} className="group cursor-pointer">
+            <Link to={`/movie/${movie.id}`} key={movie.id} className="group cursor-pointer">
               <div className="relative aspect-[2/3] rounded-lg overflow-hidden mb-3 border border-white/5 transition-all duration-300 group-hover:border-orange-500/50">
                 <img 
                   src={movie.image} 
@@ -71,17 +73,14 @@ const ChineseMovie = () => {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 
-                {/* ស្លាកសញ្ញាបញ្ជាក់ភាសាចិន */}
                 <div className="absolute top-2 left-2 bg-orange-600 text-white text-[9px] font-black px-1.5 py-0.5 rounded uppercase shadow-md">
                   C-DRAMA
                 </div>
 
-                {/* ពិន្ទុ Rating */}
                 <div className="absolute top-2 right-2 flex items-center bg-black/60 backdrop-blur-sm px-2 py-0.5 rounded text-[11px] text-white border border-white/10">
                   <span className="text-yellow-400 mr-1">★</span> {movie.rating}
                 </div>
 
-                {/* ប៊ូតុង Play នៅពេល Hover (ពណ៌ទឹកក្រូច) */}
                 <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <div className="w-12 h-12 bg-orange-500/20 backdrop-blur-md border border-orange-500/30 rounded-full flex items-center justify-center shadow-2xl transition-transform group-hover:scale-110">
                     <svg className="w-6 h-6 text-orange-500 ml-1" fill="currentColor" viewBox="0 0 20 20">
@@ -91,7 +90,6 @@ const ChineseMovie = () => {
                 </div>
               </div>
 
-              {/* ព័ត៌មានរឿង */}
               <div className="space-y-1">
                 <h3 className="text-gray-200 font-medium text-sm md:text-base line-clamp-1 group-hover:text-orange-500 transition-colors">
                   {movie.title}
@@ -102,7 +100,7 @@ const ChineseMovie = () => {
                   <span>{movie.category}</span>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 

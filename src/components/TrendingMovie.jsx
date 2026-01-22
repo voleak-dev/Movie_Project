@@ -1,8 +1,8 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom'; // ១. Import Link បន្ថែម
 
 const TrendingMovie = () => {
-  const navigate = useNavigate(); // Hook for navigation
+  const navigate = useNavigate();
   
   const trendingMovies = [
     {
@@ -47,7 +47,6 @@ const TrendingMovie = () => {
     }
   ];
 
-  // Function to handle movie click
   const handleMovieClick = (movieId) => {
     navigate(`/movie/${movieId}`);
   };
@@ -64,9 +63,10 @@ const TrendingMovie = () => {
               ភាពយន្តកំពុងពេញនិយម
             </h2>
           </div>
-          <a href="#" className="text-red-500 hover:text-red-400 text-sm font-medium transition-colors">
+          {/* ២. ប្តូរពី <a> មកជា <Link> ដើម្បីដោះស្រាយ build error */}
+          <Link to="/popular" className="text-red-500 hover:text-red-400 text-sm font-medium transition-colors">
             មើលទាំងអស់ &rarr;
-          </a>
+          </Link>
         </div>
 
         {/* Movie Grid */}
@@ -75,7 +75,7 @@ const TrendingMovie = () => {
             <div 
               key={movie.id} 
               className="group relative cursor-pointer"
-              onClick={() => handleMovieClick(movie.id)} // Add click handler
+              onClick={() => handleMovieClick(movie.id)}
             >
               {/* Poster Image */}
               <div className="relative aspect-[2/3] overflow-hidden rounded-xl bg-gray-900 border border-gray-800 transition-all duration-300 group-hover:border-red-600 group-hover:shadow-[0_0_20px_rgba(220,38,38,0.3)]">
@@ -90,7 +90,7 @@ const TrendingMovie = () => {
                   <button 
                     className="bg-red-600 text-white text-xs font-bold py-2 rounded-lg translate-y-4 group-hover:translate-y-0 transition-transform duration-300"
                     onClick={(e) => {
-                      e.stopPropagation(); // Prevent event bubbling
+                      e.stopPropagation(); 
                       handleMovieClick(movie.id);
                     }}
                   >

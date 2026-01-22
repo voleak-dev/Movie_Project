@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // ១. Import Link
 
 const KoreanMovie = () => {
   const kMovies = [
@@ -48,22 +49,24 @@ const KoreanMovie = () => {
     <section className="bg-gray-950 py-16 font-khmer">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Header - Styled like AllMovie/KhmerMovie */}
+        {/* Header */}
         <div className="flex items-center justify-between mb-10">
           <div className="flex items-center space-x-3">
             <h2 className="text-2xl md:text-3xl font-bold text-white border-l-4 border-blue-500 pl-4 uppercase tracking-wider">
               ភាពយន្តកូរ៉េពេញនិយម
             </h2>
           </div>
-          <a href="#" className="text-blue-500 hover:text-blue-400 text-sm font-medium transition-colors">
+          {/* ២. ប្តូរទៅជា Link */}
+          <Link to="/korean-movies" className="text-blue-500 hover:text-blue-400 text-sm font-medium transition-colors">
             មើលទាំងអស់ &rarr;
-          </a>
+          </Link>
         </div>
 
         {/* Movie Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-5 gap-y-10">
           {kMovies.map((movie) => (
-            <div key={movie.id} className="group cursor-pointer">
+            /* ៣. ប្រើ Link រុំ Card ទាំងមូលដើម្បីងាយស្រួលចុច */
+            <Link to={`/movie/${movie.id}`} key={movie.id} className="group cursor-pointer">
               <div className="relative aspect-[2/3] rounded-lg overflow-hidden mb-3 border border-white/5 transition-all duration-300 group-hover:border-blue-500/50">
                 <img 
                   src={movie.image} 
@@ -71,17 +74,14 @@ const KoreanMovie = () => {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 
-                {/* Korean Tag Badge */}
                 <div className="absolute top-2 left-2 bg-blue-600 text-white text-[9px] font-black px-1.5 py-0.5 rounded uppercase shadow-md">
                   K-SERIES
                 </div>
 
-                {/* Star Rating */}
                 <div className="absolute top-2 right-2 flex items-center bg-black/60 backdrop-blur-sm px-2 py-0.5 rounded text-[11px] text-white border border-white/10">
                   <span className="text-yellow-400 mr-1">★</span> {movie.rating}
                 </div>
 
-                {/* Hover Play Button (Blue Theme) */}
                 <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <div className="w-12 h-12 bg-blue-500/20 backdrop-blur-md border border-blue-500/30 rounded-full flex items-center justify-center shadow-2xl transition-transform group-hover:scale-110">
                     <svg className="w-6 h-6 text-blue-400 ml-1" fill="currentColor" viewBox="0 0 20 20">
@@ -91,7 +91,6 @@ const KoreanMovie = () => {
                 </div>
               </div>
 
-              {/* Movie Title & Info */}
               <div className="space-y-1">
                 <h3 className="text-gray-200 font-medium text-sm md:text-base line-clamp-1 group-hover:text-blue-500 transition-colors">
                   {movie.title}
@@ -102,7 +101,7 @@ const KoreanMovie = () => {
                   <span>{movie.category}</span>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 
